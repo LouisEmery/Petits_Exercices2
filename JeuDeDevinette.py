@@ -41,6 +41,9 @@ while play_again != "n":
         #s'il veut, les changer
         x = int(input("vous voulez un chiffre entre"))
         y = int(input("et"))
+        #si lutilisateur donne un premier nombre plus grand que le deuxieme, on les inverses.
+        if x > y:
+            x, y = y, x
     else:
         nbr = random.randint(x, y)
         # commencer le jeu

@@ -44,10 +44,9 @@ while play_again != "n":
         #si lutilisateur donne un premier nombre plus grand que le deuxieme, on les inverses.
         if x > y:
             x, y = y, x
-    else:
-        nbr = random.randint(x, y)
-        # commencer le jeu
-        print("J'ai choisi un nombre entre", x, "et", y, "essai de le trouver")
-        choix = -1
-        while choix != nbr:
-            choice()
+    nbr = random.randint(x, y)
+    # commencer le jeu
+    print("J'ai choisi un nombre entre", x, "et", y, "essai de le trouver")
+    choix = -1
+    while choix != nbr:
+        choice()
